@@ -1,0 +1,12 @@
+/data/leevenluo/python_proj/osqa_old/osqa/forum/modules/__init__.py TIME: 2014-12-20 06:14:49,347 MSG: __init__.py:get_modules_script:27 Error importing startup from module <module 'osqa.forum_modules.mysqlfulltext' from '/data/leevenluo/python_proj/osqa_old/osqa/forum_modules/mysqlfulltext/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/data/leevenluo/python_proj/osqa_old/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/data/leevenluo/python_proj/osqa_old/osqa/forum_modules/mysqlfulltext/startup.py", line 36, in <module>
+    cursor.close()
+  File "/data/leevenluo/python_proj/osqa_old/lib/python2.6/site-packages/MySQL_python-1.2.5-py2.6-linux-x86_64.egg/MySQLdb/cursors.py", line 100, in close
+    while self.nextset(): pass
+  File "/data/leevenluo/python_proj/osqa_old/lib/python2.6/site-packages/MySQL_python-1.2.5-py2.6-linux-x86_64.egg/MySQLdb/cursors.py", line 132, in nextset
+    nr = db.next_result()
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'delimiter |\n\nCREATE TRIGGER fts_on_insert AFTER INSERT ON forum_node\n  FOR EACH ' at line 1")
+
