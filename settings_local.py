@@ -50,7 +50,12 @@ TIME_ZONE = 'America/New_York'
 #OTHER SETTINGS
 
 USE_I18N = True
-LANGUAGE_CODE = 'en'
+
+#init language en
+#LANGUAGE_CODE = 'en'
+
+#modify cn
+LANGUAGE_CODE = 'cn'
 
 DJANGO_VERSION = 1.1
 OSQA_DEFAULT_SKIN = 'default'
