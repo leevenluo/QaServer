@@ -42,7 +42,7 @@ SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 # This should be equal to your domain name, plus the web application context.
 # This shouldn't be followed by a trailing slash.
 # I.e., http://www.yoursite.com or http://www.hostedsite.com/yourhostapp
-APP_URL = 'http://'
+APP_URL = 'http://qa.localhost/'
 
 #LOCALIZATIONS
 TIME_ZONE = 'America/New_York'
